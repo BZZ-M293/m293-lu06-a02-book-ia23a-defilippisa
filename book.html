@@ -5,6 +5,26 @@
     <title>LU06.A02 - Buch</title>
   </head>
   <body>
+    <main>
+      <form>
+        <label for="titel">Buchtitel:</label>
+        <input required id="titel" name="titel" type="text" pattern=".{2,30}" title="2 bis 30 Zeichen"/>
 
+        <label for="autoren">Autoren:</label>
+        <input id="autoren" name="autoren" type="text" pattern=".{5,40}" title="5 bis 40 Zeichen"/>
+
+        <label for="preis">Preis:</label>
+        <input id="preis" name="preis" type="number" step="0.01" min="0" />
+
+        <label for="erdatum">Erscheinungsdatum:</label>
+        <input id="erdatum" name="erdatum" type="date" />
+
+        <label for="auflage">Auflage:</label>
+        <input id="auflage" name="auflage" type="number" min="1" max="9" />
+
+        <button type="reset">Zurücksetzen</button>
+        <button type="submit">Absenden</button>
+      </form>
+    </main>
   </body>
 </html>
